@@ -5,10 +5,8 @@
     "start": "node server.js"
   },
   "dependencies": {
-    "node-xmpp": "~1.0.0",
-    "q": "~1.0.1",
-    "child-process-promise": "~0.2.0",
-    "shell-escape": "~0.1.0"
+    "mappy-commands": "git+ssh://tobi@tobiwild.de:git/mappy-commands",
+    "node-xmpp": "~1.0.0"
   },
   "devDependencies": {
     "grunt": "~0.4.2",

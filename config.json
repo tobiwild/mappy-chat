@@ -19,7 +19,7 @@
                 }
             },
             "message": {
-                "command": "list_audio_files"
+                "command": "ListAudioFilesCommand"
             }
         },
         {
@@ -30,7 +30,7 @@
                 }
             },
             "message": {
-                "command": "kill_processes"
+                "command": "KillProcessesCommand"
             }
         },
         {
@@ -41,7 +41,7 @@
                 }
             },
             "message": {
-                "command": "play_audio_file",
+                "command": "PlayAudioFileCommand",
                 "file": "{text1}"
             }
         },
@@ -53,7 +53,7 @@
                 }
             },
             "message": {
-                "command": "text_to_speech",
+                "command": "TextToSpeechCommand",
                 "text": "{user} sagt: {text2}",
                 "language": "{text1}",
                 "speed":"1.0",

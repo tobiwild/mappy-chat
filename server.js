@@ -2,15 +2,11 @@
 
 var xmpp = require('node-xmpp');
 var fs   = require('fs');
-
+var commands = require('mappy-commands');
 var MessageManager = require('./lib/message_manager').MessageManager;
-var CommandFactory = require('./lib/command_factory').CommandFactory;
 
 var config = JSON.parse(fs.readFileSync('./config.json'));
-
 var messageManager = new MessageManager(config.rules);
-var commandFactory = new CommandFactory();
-
 var client = new xmpp.Client(config.jabber.client);
 
 client.on('online', function() {
@@ -22,7 +18,7 @@ client.on('online', function() {
 });
 
 function handleMessage(message, roomJid) {
-    var command = commandFactory.create(message.command);
+    var command = new commands[message.command]();
 
     var commandReturn = command.run(message);
 
