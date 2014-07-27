@@ -17,8 +17,14 @@ client.on('online', function() {
     }
 });
 
+var commandInstances = {};
+
 function handleMessage(message, roomJid) {
-    var command = new commands[message.command]();
+    if (! (message.command in commandInstances)) {
+        commandInstances[message.command] =  new commands[message.command]();
+    }
+
+    var command = commandInstances[message.command];
 
     var commandReturn = command.run(message);
 

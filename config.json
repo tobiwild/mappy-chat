@@ -48,6 +48,30 @@
         {
             "conditions": {
                 "text": {
+                    "regex": "^target (.+)",
+                    "modifier": ""
+                }
+            },
+            "message": {
+                "command": "RocketLauncherCommand",
+                "target": "{text1}"
+            }
+        },
+        {
+            "conditions": {
+                "text": {
+                    "regex": "^rl (.+)",
+                    "modifier": ""
+                }
+            },
+            "message": {
+                "command": "RocketLauncherCommand",
+                "commands": "{text1}"
+            }
+        },
+        {
+            "conditions": {
+                "text": {
                     "regex":"^!([a-z]{2}) (.*)",
                     "modifier":""
                 }
