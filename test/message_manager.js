@@ -1,7 +1,7 @@
 'use strict';
 
 var assert         = require('assert');
-var MessageManager = require('../lib/message_manager').MessageManager;
+var MessageManager = require('../lib/message_manager');
 
 describe('MessageManager', function() {
 

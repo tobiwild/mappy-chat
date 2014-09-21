@@ -8,6 +8,7 @@
   "scripts": {
     "start": "node server.js"
   },
+  "main": "./lib/mappy_chat",
   "dependencies": {
     "mappy-commands": "git://github.com/tobiwild/mappy-commands",
     "node-xmpp": "~1.0.0"
