@@ -1,8 +1,8 @@
 {
   "name": "mappy-chat",
-  "repository" : {
-     "type": "git",
-     "url": "http://github.com/tobiwild/mappy-chat.git"
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/tobiwild/mappy-chat.git"
   },
   "description": "Control your Mappy via XMPP chat",
   "scripts": {
@@ -11,7 +11,7 @@
   "main": "./lib/mappy_chat",
   "dependencies": {
     "mappy-commands": "git://github.com/tobiwild/mappy-commands",
-    "node-xmpp": "~1.0.0"
+    "node-xmpp": "^1.0.0-alpha2"
   },
   "devDependencies": {
     "grunt": "~0.4.2",
