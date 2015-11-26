@@ -11,7 +11,8 @@
   "main": "./lib/mappy_chat",
   "dependencies": {
     "mappy-commands": "git://github.com/tobiwild/mappy-commands",
-    "node-xmpp": "^1.0.0-alpha2"
+    "node-xmpp-client": "^3.0.0",
+    "node-xmpp-core": "^5.0.0"
   },
   "devDependencies": {
     "grunt": "~0.4.2",
